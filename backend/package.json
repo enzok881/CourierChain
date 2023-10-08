@@ -1,0 +1,25 @@
+{
+  "name": "tracking-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config dist/src/main.js",
+    "start:dev": "nodemon  -r dotenv/config --watch 'src/**/*.ts' --exec 'ts-node' src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.2",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "@hokify/agenda": "^6.3.0",
+    "@openzeppelin/defender-relay-client": "^1.48.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.23.2",
+    "web3": "^4.1.2"
+  }
+}
